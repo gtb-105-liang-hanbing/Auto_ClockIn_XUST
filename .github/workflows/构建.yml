@@ -3,7 +3,14 @@
 
 name: 构建1
 on:
-  fork:
+  fork:  
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+  
 
 jobs:
   build:
